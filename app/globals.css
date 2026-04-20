@@ -1,0 +1,228 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+  --font-heading: var(--font-heading);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  --font-sans: "Calibri", "Candara", "Segoe UI", sans-serif;
+  --font-mono: "SFMono-Regular", "Menlo", "Consolas", monospace;
+  --font-heading: "Georgia", "Times New Roman", serif;
+
+  --background: #faf6f0;
+  --foreground: #2c1a0e;
+  --card: #faf6f0;
+  --card-foreground: #2c1a0e;
+  --popover: #faf6f0;
+  --popover-foreground: #2c1a0e;
+  --primary: #c0623a;
+  --primary-foreground: #faf6f0;
+  --secondary: #f2e8de;
+  --secondary-foreground: #2c1a0e;
+  --muted: #f3ece4;
+  --muted-foreground: #6b4a37;
+  --accent: #f3e6da;
+  --accent-foreground: #2c1a0e;
+  --destructive: #b83f2e;
+  --border: #d8c8b9;
+  --input: #d8c8b9;
+  --ring: #c0623a;
+  --chart-1: #c0623a;
+  --chart-2: #d17f52;
+  --chart-3: #a85b36;
+  --chart-4: #7d4529;
+  --chart-5: #4f2b17;
+  --radius: 0.625rem;
+  --sidebar: #f7f1ea;
+  --sidebar-foreground: #2c1a0e;
+  --sidebar-primary: #c0623a;
+  --sidebar-primary-foreground: #faf6f0;
+  --sidebar-accent: #f2e8de;
+  --sidebar-accent-foreground: #2c1a0e;
+  --sidebar-border: #d8c8b9;
+  --sidebar-ring: #c0623a;
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+  --chart-1: oklch(0.87 0 0);
+  --chart-2: oklch(0.556 0 0);
+  --chart-3: oklch(0.439 0 0);
+  --chart-4: oklch(0.371 0 0);
+  --chart-5: oklch(0.269 0 0);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.556 0 0);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    background-image:
+      radial-gradient(circle at 8% -20%, rgb(192 98 58 / 16%), transparent 42%),
+      radial-gradient(circle at 92% 6%, rgb(44 26 14 / 9%), transparent 38%),
+      linear-gradient(to bottom, #fbf7f1, #f6eee4 42%, #fbf7f1 100%);
+    min-width: 320px;
+    overflow-x: clip;
+  }
+
+  html {
+    @apply font-sans;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+  }
+
+  .font-heading {
+    font-family: var(--font-heading);
+  }
+}
+
+@layer utilities {
+  .nex-shell {
+    @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .nex-section {
+    @apply py-16 sm:py-20;
+  }
+
+  .nex-card {
+    @apply rounded-2xl border border-[#d8c8b9] bg-[#fffdf9] shadow-[0_1px_0_rgba(44,26,14,0.08),0_12px_30px_rgba(44,26,14,0.06)];
+  }
+
+  .nex-card-hover {
+    @apply transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_1px_0_rgba(44,26,14,0.08),0_22px_42px_rgba(44,26,14,0.12)];
+  }
+
+  .nex-grid-bg {
+    background-image:
+      linear-gradient(to right, rgb(44 26 14 / 5%) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(44 26 14 / 5%) 1px, transparent 1px);
+    background-size: 26px 26px;
+  }
+
+  .nex-fade-up {
+    animation: nex-fade-up 680ms ease-out both;
+  }
+
+  .nex-float {
+    animation: nex-float 4.2s ease-in-out infinite;
+  }
+
+  .nex-glow {
+    animation: nex-glow 3s ease-in-out infinite;
+  }
+
+  .nex-hero-pan {
+    animation: nex-hero-pan 18s linear infinite alternate;
+  }
+}
+
+@keyframes nex-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes nex-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes nex-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgb(192 98 58 / 15%);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgb(192 98 58 / 0%);
+  }
+}
+
+@keyframes nex-hero-pan {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  to {
+    transform: translate3d(-16px, 8px, 0) scale(1.06);
+  }
+}
