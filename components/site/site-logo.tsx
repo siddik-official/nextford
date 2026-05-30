@@ -20,11 +20,12 @@ export function SiteLogo({
   return (
     <div className={cn("flex items-center gap-3", className)}>
       <Image
-        src="/Artboard 2.png"
+        src="/apple-touch-icon.png"
         alt="Nexford IT logo mark"
         width={iconSize}
         height={iconSize}
         priority
+        className="rounded-md"
       />
       <div className="flex flex-col leading-none">
         <span

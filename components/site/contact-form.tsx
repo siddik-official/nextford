@@ -134,7 +134,7 @@ export function ContactForm() {
           Submit Enquiry
         </Button>
         <p className="text-xs italic text-[#6b4a37]">
-          We respond within 1 business day (AEDT).
+          We respond within 1 business day (AEDT / AEST).
         </p>
       </div>
 

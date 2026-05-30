@@ -9,7 +9,7 @@ import { SITE_CONFIG } from "@/lib/site-data";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Contact Nexford IT to discuss your requirements. We respond within one business day aligned to AEDT.",
+    "Contact Nexford IT to discuss your requirements. We respond within one business day aligned to AEDT / AEST.",
 };
 
 export default function ContactPage() {
@@ -19,7 +19,7 @@ export default function ContactPage() {
         <SectionHeading
           eyebrow="Contact"
           title="Tell us what you need"
-          description="We will get back to you within one business day (AEDT)."
+          description="We will get back to you within one business day (AEDT / AEST)."
         />
       </section>
 
@@ -59,20 +59,25 @@ export default function ContactPage() {
                   className="flex items-start gap-3 rounded-md border border-[#e0d1c4] bg-white p-3 transition-all duration-300 hover:-translate-y-0.5"
                 >
                   <MessageCircle className="mt-0.5 size-4 text-[#c0623a]" />
-                  <span>WhatsApp Business</span>
+                  <span>
+                    WhatsApp Business
+                    <span className="block text-xs opacity-75">
+                      {SITE_CONFIG.whatsappNumber}
+                    </span>
+                  </span>
                 </a>
 
                 <div className="flex items-start gap-3 rounded-md border border-[#e0d1c4] bg-white p-3">
                   <MapPin className="mt-0.5 size-4 text-[#c0623a]" />
                   <span>
                     Based in Dhaka, Bangladesh - serving clients across
-                    Australia and internationally.
+                    Australia, New Zealand, and internationally.
                   </span>
                 </div>
 
                 <div className="flex items-start gap-3 rounded-md border border-[#e0d1c4] bg-white p-3">
                   <Clock3 className="mt-0.5 size-4 text-[#c0623a]" />
-                  <span>We respond within 1 business day (AEDT).</span>
+                  <span>We respond within 1 business day (AEDT / AEST).</span>
                 </div>
               </CardContent>
             </Card>

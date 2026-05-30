@@ -21,9 +21,9 @@ import {
 } from "@/lib/site-data";
 
 export const metadata: Metadata = {
-  title: "Home",
+  title: { absolute: "Nexford IT" },
   description:
-    "Nexford IT helps Australian businesses run smarter and scale faster with digital growth, IT consultancy, and operations support.",
+    "Nexford IT helps Australian and New Zealand businesses run smarter and scale faster with digital growth, IT consultancy, and operations support.",
 };
 
 export default function HomePage() {
@@ -48,7 +48,7 @@ export default function HomePage() {
         <div className="nex-shell relative grid items-center gap-10 pt-32 pb-18 md:grid-cols-2 md:pt-36 md:pb-24">
           <div className="nex-fade-up">
             <p className="text-xs font-semibold tracking-[0.24em] text-[#f0d7c6] uppercase">
-              AU-Facing Digital and Operations Partner
+              AUS/NZ-Facing Digital and Operations Partner
             </p>
             <h1 className="mt-4 font-heading text-4xl leading-tight text-[#faf6f0] sm:text-5xl md:text-6xl">
               Run Smarter.
@@ -56,7 +56,7 @@ export default function HomePage() {
               Scale Faster.
             </h1>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-[#f3e2d4] sm:text-lg">
-              Nexford IT supports Australian businesses with practical digital,
+              Nexford IT supports Australian and New Zealand businesses with practical digital,
               technology, and operations delivery. Every engagement is
               documented, transparent, and designed around measurable outcomes.
             </p>

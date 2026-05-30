@@ -17,7 +17,7 @@ import { WHY_US_COMPARISON, WHY_US_DIFFERENTIATORS } from "@/lib/site-data";
 export const metadata: Metadata = {
   title: "Why Us",
   description:
-    "Discover what makes Nexford IT different: performance-aligned delivery, transparent operations, and AU-ready execution standards.",
+    "Discover what makes Nexford IT different: performance-aligned delivery, transparent operations, and AUS/NZ-ready execution standards.",
 };
 
 export default function WhyUsPage() {
@@ -107,7 +107,7 @@ export default function WhyUsPage() {
           <CardContent className="space-y-4 text-[0.96rem] leading-relaxed text-[#4f3527]">
             <p>
               Nexford IT engagements are designed with practical awareness of
-              VEU and ESC workflow expectations, AU privacy obligations, and
+              VEU and ESC workflow expectations, AUS/NZ privacy obligations, and
               documentation-first delivery standards.
             </p>
             <p>

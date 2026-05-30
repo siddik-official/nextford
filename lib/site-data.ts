@@ -36,7 +36,8 @@ export const SITE_CONFIG = {
   domain: "nexfordit.com",
   email: "info@nexfordit.com",
   location: "Dhaka, Bangladesh",
-  whatsappUrl: "https://wa.me/8801700000000",
+  whatsappNumber: "+880 1635-482049",
+  whatsappUrl: "https://wa.me/8801635482049",
   ctaPrimary: "Book a Free Consultation",
 } as const;
 
@@ -55,9 +56,9 @@ export const USP_PILLARS = [
     icon: Handshake,
   },
   {
-    title: "Fluent in the Australian Market",
+    title: "Fluent in the AUS/NZ Market",
     description:
-      "We understand AU standards, compliance, and business culture.",
+      "We understand AUS/NZ standards, compliance, and business culture.",
     icon: Compass,
   },
   {
@@ -128,7 +129,7 @@ export const SERVICES: Service[] = [
       "Content scheduling and calendar management",
       "Audience growth strategy focused on organic reach and follower development",
       "Minimum 2 posts per week, up to 8 posts per month excluding paid ads",
-      "Coverage Monday to Friday aligned to Australian Eastern time (AEDT)",
+      "Coverage Monday to Friday aligned to Australian Eastern (AEDT / AEST) and New Zealand business hours",
       "Monthly analytics reporting for reach, engagement, and follower growth",
     ],
     icon: MessageSquare,
@@ -177,7 +178,7 @@ export const SERVICES: Service[] = [
       "HR support including records, onboarding documentation, and leave management",
       "Operations oversight with workflow tracking, reporting, and process compliance",
       "Customer pre-qualification and lead intake management",
-      "Compliance lodgement and regulatory documentation for AU market standards",
+      "Compliance lodgement and regulatory documentation for AUS/NZ market standards",
       "Invoice processing, basic bookkeeping support, and accounts coordination",
       "CRM data management and maintenance",
     ],
@@ -220,8 +221,8 @@ export const SERVICES: Service[] = [
 
 export const HOME_SOCIAL_PROOF = [
   {
-    stat: "AU-Focused Delivery",
-    note: "Processes designed around Australian business expectations and timelines.",
+    stat: "AUS/NZ-Focused Delivery",
+    note: "Processes designed around Australian and New Zealand business expectations and timelines.",
   },
   {
     stat: "VEU and ESC Familiar",
@@ -229,13 +230,13 @@ export const HOME_SOCIAL_PROOF = [
   },
   {
     stat: "1 Business Day Response",
-    note: "Clear communication windows aligned with AEDT business hours.",
+    note: "Clear communication windows aligned with AEDT / AEST business hours.",
   },
 ];
 
 export const ABOUT_FOUNDER_STORY = [
   "Nexford IT was built to solve a common business problem: owners spend too much time managing fragmented digital and operational systems, and not enough time growing the business.",
-  "Our model combines strategic thinking with hands-on delivery support. From Dhaka, our remote-first team works in lockstep with Australian businesses and trades to keep operations moving and results measurable.",
+  "Our model combines strategic thinking with hands-on delivery support. From Dhaka, our remote-first team works in lockstep with Australian and New Zealand businesses and trades to keep operations moving and results measurable.",
   "We do not position ourselves as a generic outsourced vendor. We work as an accountable extension of your team, with transparent reporting, documented processes, and decisions that stay grounded in business outcomes.",
   "Every engagement is designed for clarity, speed, and long-term reliability so your team can run smarter, scale faster, and stay focused on what matters most.",
 ];
@@ -254,7 +255,7 @@ export const TEAM_MEMBERS = [
   {
     name: "Growth Desk",
     title: "Digital Performance Lead",
-    location: "AU-facing remote",
+    location: "AUS/NZ-facing remote",
   },
 ];
 
@@ -273,7 +274,7 @@ export const BRAND_VALUES = [
   {
     title: "Compliance Mindset",
     description:
-      "Delivery decisions account for AU operational and legal realities.",
+      "Delivery decisions account for AUS/NZ operational and legal realities.",
     icon: ShieldCheck,
   },
   {
@@ -303,7 +304,7 @@ export const WHY_US_DIFFERENTIATORS = [
   {
     title: "Compliance-Ready from Day One",
     description:
-      "Processes are designed with Australian standards and reporting needs in mind so teams can stay audit-ready without extra overhead.",
+      "Processes are designed with Australian and New Zealand standards and reporting needs in mind so teams can stay audit-ready without extra overhead.",
   },
   {
     title: "No Hidden Markups",
@@ -311,9 +312,9 @@ export const WHY_US_DIFFERENTIATORS = [
       "Scope, effort, and commercial terms are documented clearly. You always have visibility on what is happening and what comes next.",
   },
   {
-    title: "Built for Australian Market Standards",
+    title: "Built for AUS/NZ Market Standards",
     description:
-      "Communication cadence, delivery windows, and operational language are aligned to Australian business expectations.",
+      "Communication cadence, delivery windows, and operational language are aligned to Australian and New Zealand business expectations.",
   },
   {
     title: "Scalable from 1 Job to 500",
@@ -340,7 +341,7 @@ export const WHY_US_COMPARISON = [
   },
   {
     others: "Generic offshore communication",
-    weDo: "AU-aligned communication rhythm and delivery standards",
+    weDo: "AUS/NZ-aligned communication rhythm and delivery standards",
     matters: "Fewer misunderstandings and cleaner project momentum",
   },
   {

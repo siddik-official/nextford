@@ -13,7 +13,7 @@ import {
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn how Nexford IT supports Australian businesses with transparent, documented, and accountable delivery from Dhaka.",
+    "Learn how Nexford IT supports Australian and New Zealand businesses with transparent, documented, and accountable delivery from Dhaka.",
 };
 
 function PullQuote({ title, quote }: { title: string; quote: string }) {
@@ -37,7 +37,7 @@ export default function AboutPage() {
       <section className="nex-shell pb-12 pt-14">
         <SectionHeading
           eyebrow="About Nexford IT"
-          title="A remote-first team built for Australian business outcomes"
+          title="A remote-first team built for Australian and New Zealand business outcomes"
           description="Nexford IT combines digital growth, technology strategy, and operations execution so clients can reduce friction and improve performance with confidence."
         />
       </section>
@@ -63,11 +63,11 @@ export default function AboutPage() {
           <div className="space-y-4 lg:col-span-2">
             <PullQuote
               title="Mission"
-              quote="To help Australian businesses scale with confidence through transparent delivery, practical strategy, and execution systems that stay measurable and accountable."
+              quote="To help Australian and New Zealand businesses scale with confidence through transparent delivery, practical strategy, and execution systems that stay measurable and accountable."
             />
             <PullQuote
               title="Vision"
-              quote="To be the most trusted AU-facing digital and operations partner for growth-stage and established businesses that value speed, clarity, and reliable outcomes."
+              quote="To be the most trusted AUS/NZ-facing digital and operations partner for growth-stage and established businesses that value speed, clarity, and reliable outcomes."
             />
           </div>
         </div>
@@ -77,7 +77,7 @@ export default function AboutPage() {
         <div className="nex-shell nex-section">
           <SectionHeading
             eyebrow="Team"
-            title="Remote-first, delivery-focused, and aligned to AEDT workflows"
+            title="Remote-first, delivery-focused, and aligned to AEDT / AEST workflows"
             description="Our structure keeps communication clear and handoffs documented while preserving the flexibility needed for fast-moving projects."
           />
 

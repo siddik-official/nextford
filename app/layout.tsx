@@ -12,11 +12,11 @@ export const metadata: Metadata = {
     template: "%s | Nexford IT",
   },
   description:
-    "Nexford IT supports Australian businesses with digital growth, IT consultancy, and operations delivery from a transparent, performance-aligned model.",
+    "Nexford IT supports Australian and New Zealand businesses with digital growth, IT consultancy, and operations delivery from a transparent, performance-aligned model.",
   openGraph: {
     title: "Nexford IT",
     description:
-      "Run smarter. Scale faster. AU-focused digital, technology, and operations support.",
+      "Run smarter. Scale faster. AUS/NZ-focused digital, technology, and operations support.",
     url: "https://nexfordit.com",
     siteName: "Nexford IT",
     locale: "en_AU",
@@ -34,9 +34,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Nexford IT",
     description:
-      "AU-focused digital growth, technology, and operations support.",
+      "AUS/NZ-focused digital growth, technology, and operations support.",
     images: ["/Artboard 1.png"],
   },
+  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({
